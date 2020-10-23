@@ -1,0 +1,9 @@
+@import '../../scss/colors';
+
+header {
+  background-color: $primary_accent_color;
+  color: white;
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+}

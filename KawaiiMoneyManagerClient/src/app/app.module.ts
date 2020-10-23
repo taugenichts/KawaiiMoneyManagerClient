@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TitleBarComponent } from './titlebar/title-bar/title-bar.component';
+import { NavigationComponent } from './titlebar/navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TitleBarComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
