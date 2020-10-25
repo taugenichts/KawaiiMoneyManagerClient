@@ -1,0 +1,28 @@
+@import '../../scss/colors';
+
+nav {
+  background-color: $primary_accent_color_light;
+  margin: 0px;
+  padding: 1px;
+}
+
+nav .nav-link {
+  color: $primary_accent_color;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+}
+
+nav ul li {
+  float: left;
+  display: block;
+}
