@@ -1,9 +1,11 @@
-@import '../../scss/colors';
+@import '../../visuals/scss/colors';
+
+:host {
+  background-color: $transparent_light_overlay;
+}
 
 nav {
-  background-color: $primary_accent_color_light;
   margin: 0px;
-  padding: 1px;
 }
 
 nav .nav-link {
@@ -20,6 +22,8 @@ nav ul {
   list-style-type: none;
   overflow: hidden;
   padding: 0px;
+  margin-block-end: 0.5em;
+  margin-block-start: 0.5em;
 }
 
 nav ul li {

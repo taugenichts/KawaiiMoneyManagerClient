@@ -1,0 +1,28 @@
+@import '../../../visuals/scss/colors';
+@import '../../../visuals/scss/flex';
+
+article {
+  display: block;
+  width: auto;
+  min-width: 250px;
+  max-width: 600px;
+  min-height: 250px;
+  max-height: 600px;
+  border: 1px solid $primary_accent_color;
+  border-radius: 8px;
+  background-color: $primary_accent_color_light;
+  margin: 30px;
+}
+
+@media (max-width: 600px) {
+  article {
+    margin-top: 20qpx;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+article > div {
+  @include flex-column;
+}

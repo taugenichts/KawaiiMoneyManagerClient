@@ -1,0 +1,11 @@
+@import '../../visuals/scss/flex';
+
+main {
+  @include flex-row;
+}
+
+@media (max-width: 600px) {
+  main {
+    @include flex-column;
+  }
+}
