@@ -7,6 +7,7 @@ import { TitleBarComponent } from './titlebar/title-bar/title-bar.component';
 import { NavigationComponent } from './titlebar/navigation/navigation.component';
 import { HomeComponent } from './content/home/home.component';
 import { DashboardItemComponent } from './content/home/dashboard-item/dashboard-item.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { DashboardItemComponent } from './content/home/dashboard-item/dashboard-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

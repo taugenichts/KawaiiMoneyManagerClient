@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DashboardItemComponent implements OnInit {
 
   @Input() icon: string;
+  @Input() itemText: string;
+  @Input() route: string;
 
   constructor() { }
 
